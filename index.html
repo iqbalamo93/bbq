@@ -18,16 +18,16 @@
             <p>Join us for this live webinar</p>
         </div>
 
-        <div class="form">
+        <div class="form" id="Main-Content">
             <h2>Become a BBQ master! </h2>
             <p>Register Today</p>
             <p>
                 BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!
             </p>
-            <form action="#" method="post">
+            <form id="emailCollector" action="#" method="post">
                 
-                <input aria-label="input" type="text" placeholder="First name">
-                <input aria-label="email" type="text" placeholder="email">
+                <input aria-label="input" type="text" placeholder="First name" name="firstName" required="required">
+                <input aria-label="email" type="email" placeholder="email" name="emailAddress" required="required">
                 <button aria-label="register" type="submit">Register</button>
             </form>
             <p class="fine-print">We'll never share your information without your permission</p>
@@ -35,5 +35,7 @@
             
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
