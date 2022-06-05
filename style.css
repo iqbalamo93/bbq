@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.125rem;
+    color: #404040;
+}
+h1 {
+    font-size: 3.55rem;
+    font-weight: 300;
+    color:#fff;
+}
+h1 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.75rem;
+   
+}
+
+strong { 
+    font-weight: 900; 
+    display: block;
+}
+.container{
+    display: flex;
+    
+}
+
+.top{
+    font-size: 0.625rem;
+    font-weight: 900;
+    color: #F18119;
+    text-transform: uppercase;
+    border-top: 5px solid #F18119;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    border-image: linear-gradient(to left,#ff713b, #ffa51d) 1;
+    
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    background-color: #404040;
+    background-image: url(./images/ribs.jpg),linear-gradient(45deg,#ff713b,#ffa51d);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 100vh;
+    padding: 0 .5em 2em;
+    background-blend-mode: multiply;
+    
+
+}
+.form{
+    width: 50%;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+strong { 
+    font-weight: 900; }
+
+
+    .fine-print {
+        font-size: 0.625rem;
+        letter-spacing: 1px;
+    }
+
+form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red ; */
+    width: 80%;
+    max-width: 450px;
+    
+}
+form >*{
+    margin-bottom: .75em ;
+    font-family: inherit;
+    text-align: inherit;
+    padding: .25em;
+    border-radius: 5px;
+}
+
+form input{
+    border: 1px solid #404040;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+form input:focus{
+
+    transform: scale(1.1);
+}
+
+form button{
+    padding: 1em 1.5em;
+    font-size: 0.63rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+    background: linear-gradient(to left,#ff713b, #ffa51d);
+    color: white;
+    transition: color .8s, transform .8s;
+}
+
+form button:hover,
+form button:focus{
+    color: black;
+    transform: scale(1.1);
+    
+}
+@media (max-width:500px){
+
+    body{
+        font-size: 1rem;
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        max-width: 100%;
+        margin: 0 auto;
+          
+    }
+    .banner{
+        width: 100%;
+        padding: 0 .25em 1em;
+        min-height: 50vh;
+    }
+    h1{
+        margin:2em 0;
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 1.3125rem;}
+
+    h1 + p {
+        
+        
+        font-size: 1.3125rem;
+      
+    }
+}
